@@ -6,7 +6,6 @@ from WF_SDK import * # device instruments
 
 #import math ### could be needed for calculations
 
-
 device_data = device.open() # connecting to the device
 scope.open(device_data) #initialize the scope
 
@@ -20,7 +19,6 @@ scope.open(device_data) #initialize the scope
     
     record the data on scopean channel 1
     ### buffer = scope.record(device_data, channel=1)'''
-
 
 '''-----Write main program here-----'''
 
