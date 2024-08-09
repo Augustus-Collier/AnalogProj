@@ -2,7 +2,6 @@ from ctypes import *
 import time
 from WF_SDK import wavegen, dwfconstants as consts
 import sys
-import matplotlib.pyplot as plt
 import numpy
 
 if sys.platform.startswith("win"):
