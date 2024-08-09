@@ -48,16 +48,16 @@ def wave_iterations(average):
         plt.show()
         '''
 
-        buff_val_rms = [] # store rms of all buffer values
+        buff_val_rms = 0 # store rms of all buffer values
 
         # raising all values in the buffer to the power of 2 
         for x in buffer:
-            buff_val_rms.append(sqrt((x**2) / len(time)))
+            buff_val_rms += x**2
 
-        mean = (sum(buff_val_rms) / len(buff_val_rms))
+        #mean = (sum(buff_val_rms) / len(buff_val_rms))
         #print(mean)
-
-        average.append(mean) # appending rms to a list so the mean of all results can be found
+        rms = sqrt(buff_val_rms / len(buffer))
+        average.append(rms) # appending rms to a list so the mean of all results can be found
 
         # decide to perform more iterations or not
         '''
@@ -82,7 +82,7 @@ mean = (sum(average) / len(average)) # calculating mean
 
 plt.plot(average)
 plt.xlabel('Points')
-plt.ylabel('dB')
+plt.ylabel('')
 plt.show()
 
 print('mean:',mean, '\nmean (2dp): ', f'{mean:.2G}') # display mean 
