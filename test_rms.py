@@ -2,6 +2,7 @@ from WF_SDK import device, scope, wavegen, tools # import the devices instrument
 import matplotlib.pyplot as plt # import plotting tool
 from math import sqrt # used to calculate the rms (root mean square)
 from time import sleep # needed for delays
+import numpy as np
 
 # connect to the device
 device_data = device.open()
@@ -85,7 +86,7 @@ plt.xlabel('Points')
 plt.ylabel('dB')
 plt.show()
 
-print('mean:',mean, '\nmean (2dp):', round(mean,2)) # display mean 
+print('mean:',mean, '\nmean (2dp): ', f'{mean:.2G}') # display mean 
 
 
 
