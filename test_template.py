@@ -1,4 +1,4 @@
-from WF_SDK import * # device instruments
+from WF_SDK import device # device instruments
 
 #import matplotlib.pyplot as plt #### could be needed for plotting
 
@@ -6,8 +6,9 @@ from WF_SDK import * # device instruments
 
 #import math ### could be needed for calculations
 
+
 device_data = device.open() # connecting to the device
-scope.open(device_data) #initialize the scope
+#scope.open(device_data) #initialize the scope
 
 '''-----function to set up device and send signal-----
 
