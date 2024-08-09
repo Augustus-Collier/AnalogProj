@@ -1,1 +1,80 @@
 AnalogProj
+
+
+Device
+
+    open
+    check_error
+    close
+    temperature
+
+Oscilloscope
+
+    open
+    measure
+    trigger
+    record
+    close
+
+Waveform Generator
+
+    generate
+    close
+
+Power Supplies
+
+    switch
+    close
+
+Digital Multimeter
+
+    open
+    measure
+    close
+
+Logic Analyzer
+
+    open
+    trigger
+    record
+    close
+
+Pattern Generator
+
+    generate
+    close
+
+Static I/O
+
+    set_mode
+    get_state
+    set_state
+    set_current - UNTESTED
+    set_pull - UNTESTED
+    close
+
+Protocol
+UART
+
+    open
+    read
+    write
+    close
+
+SPI
+
+    open
+    read
+    write
+    echange
+    spy - UNTESTED
+    close
+
+I2C
+
+    open
+    read
+    write
+    echange
+    spy - UNTESTED
+    close
