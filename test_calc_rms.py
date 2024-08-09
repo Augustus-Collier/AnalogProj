@@ -5,7 +5,7 @@ from time import sleep # needed for delays
 
 # connect to the device
 device_data = device.open()
-
+scope.open(device_data) # initialize scope 
 # variables that can be changed
 amplitude = 1
 offset = 0.0
@@ -21,8 +21,6 @@ freq = [100e01, 200e01, 300e01, 400e01, 500e01,
 average = [] # will be used to store rms values of different buffers
 
 def wave_iterations(average):
-    scope.open(device_data) # initialize scope 
-
     for index, value in enumerate(freq):
 
         sleep(0.1) # wait for offset to stabilize after previous iteration
