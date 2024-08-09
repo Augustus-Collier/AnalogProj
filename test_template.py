@@ -25,6 +25,12 @@ scope.open(device_data) #initialize the scope
 
 
 
+
+
+
+
+
+
 '''-----Closing/resetting instruments used-----'''
 
 #scope.close(device_data)
