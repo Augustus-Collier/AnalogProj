@@ -32,10 +32,10 @@ def wave_iterations(average):
 
         # generate a sine signal with set amplitude on channel 1
         wavegen.generate(device_data, channel=1, function=wavegen.function.sine, offset=offset, frequency=value, amplitude=amplitude)
-        
+
         # record data with the scopeon channel 1
         buffer = scope.record(device_data, channel=1)
-        
+
         # generate buffer for time moments
         time = []
         for indx in range(len(buffer)):
