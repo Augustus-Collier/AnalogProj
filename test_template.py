@@ -10,7 +10,7 @@ from WF_SDK import device # device instruments
 device_data = device.open() # connecting to the device
 #scope.open(device_data) #initialize the scope
 
-'''-----function to set up device and send signal-----
+'''-----function to set up device and send signals-----
 
     sets up trigger on channel 1 of the connected device
     ### scope.trigger(device_data, enable=True, source=scope.trigger_source.analog, channel=1, level=0)
