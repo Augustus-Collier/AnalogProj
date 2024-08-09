@@ -53,7 +53,7 @@ def wave_iterations(average):
 
         # raising all values in the buffer to the power of 2 
         for x in buffer:
-            buff_val_rms.append((x**2) / len(time))
+            buff_val_rms.append(sqrt((x**2) / len(time)))
 
         mean = (sum(buff_val_rms) / len(buff_val_rms))
         #print(mean)
